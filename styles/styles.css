@@ -129,7 +129,7 @@ header, main, footer {
 }
 
 #contactanos {
-    background-color: navajowhite;
+    background-color: rgba(255,222,173,0.9);
     position: absolute;
     top: 6%;
     right: 56%;
@@ -141,7 +141,7 @@ header, main, footer {
 }
 
 #sdlcList {
-    background-color: navajowhite;
+    background-color: rgba(255,222,173,0.9);
     position: absolute;
     top: 6%;
     right: 20%;
