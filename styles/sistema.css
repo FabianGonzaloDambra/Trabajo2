@@ -18,11 +18,14 @@ html {
   }
 
 body {
+    background: url(../images/background.png) center/cover no-repeat;
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr auto;
+    position: relative;
 }
+
 
 header {
     background-color: antiquewhite;
@@ -76,38 +79,59 @@ h1, h2, h3 {
     text-align: center;
 }
 
-#area1 {
+#area1::before,
+#area2::before,
+#area3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#area1::before {
     background: linear-gradient(to right, azure, aquamarine);
-  }
-  
-#area2 {
+    opacity: 0.5;
+}
+
+#area2::before {
     background: linear-gradient(to right, aquamarine, aqua);
-  }
-  
-#area3 {
+    opacity: 0.5;
+}
+
+#area3::before {
     background: linear-gradient(to right, aqua, green);
-  }
+    opacity: 0.5;
+}
+
+header, main, footer {
+    position: relative;
+    z-index: 1;
+}
 
 #contactanos, #sdlcList {
     display: none;
+    z-index: 2;
 }
 
 #sdlc {
     position: absolute;
-    top: 3%;
+    top: 1%;
     right: 35%;
 }
 
 #quienes_somos {
     position: absolute;
-    top: 3%;
+    top: 1%;
     right: 55%;
 }
 
 #contactanos {
     background-color: navajowhite;
     position: absolute;
-    top: 14%;
+    top: 7.5%;
     right: 56%;
     padding: 0;
     border: double;
@@ -119,7 +143,7 @@ h1, h2, h3 {
 #sdlcList {
     background-color: navajowhite;
     position: absolute;
-    top: 14%;
+    top: 7.5%;
     right: 20%;
     padding: 0;
     border: double;
@@ -135,4 +159,11 @@ h1, h2, h3 {
 
 #lista li {
  list-style-type: circle;   
+}
+
+footer h3 {
+    background: linear-gradient(to right, #ff8c00, #ff2d00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
