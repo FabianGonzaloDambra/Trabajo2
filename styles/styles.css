@@ -93,17 +93,17 @@ h1, h2, h3 {
 
 #area1::before {
     background: linear-gradient(to right, azure, aquamarine);
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 #area2::before {
     background: linear-gradient(to right, aquamarine, aqua);
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 #area3::before {
     background: linear-gradient(to right, aqua, green);
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 header, main, footer {
